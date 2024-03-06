@@ -1,0 +1,52 @@
+.homepage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+
+  .carousel-image {
+    width: 100%;
+    height: 400px; /* Set the desired height for your carousel images */
+    object-fit: cover; /* Ensure images maintain aspect ratio while covering the entire space */
+  }
+
+  .commentArea {
+    display: flex;
+  }
+  
+  .comment-textarea {
+    flex: 2;
+    margin-right: 10px; /* Adjust spacing as needed */
+    border-radius: 5px;
+  }
+  
+  .comment-btn {
+    flex: 1;
+  }
+
+  .post-card{
+    border:1px solid #ccc;
+    padding:20px;
+    margin:20px;
+    border-radius: 5px;
+  }
+  
+  .show-comments-btn{
+    margin-top:10px;
+  }
+  .like{
+    display: flex;
+  }
+  .like-btn{
+ margin-top:10px;
+ margin-right:10px;
+ height:30px;
+ min-width:70px;
+  }
+
+  .post-content {
+    word-wrap: break-word;
+    /* or */
+    overflow-wrap: break-word;
+  }
+  
