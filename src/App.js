@@ -11,7 +11,7 @@ import { UserContextProvider } from './context/userContext.js';
 import Dashboard  from './pages/Dashboard.js';
 
 
-axios.defaults.baseURL= 'http://localhost:5000';
+axios.defaults.baseURL= 'https://socialmedia-backend-z4ny.onrender.com';
 axios.defaults.withCredentials=true;
 
 
