@@ -27,7 +27,7 @@ export function UserContextProvider({ children }) {
       fetchData();
       setK(false);
     }
-  }, [user]);
+  }, [user,k]);
 
   // Function to update the user context
   const updateUserContext = async (userData) => {
