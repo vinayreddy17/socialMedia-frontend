@@ -7,7 +7,7 @@ import { UserContext } from '../context/userContext';
 
 function Login() {
  const navigate = useNavigate()
- const { updateUserContext } = useContext(UserContext);
+ 
 const [data, setData] = useState({email:'',password:''})
 
     const handleSubmit = async(e) => {
@@ -24,7 +24,7 @@ const [data, setData] = useState({email:'',password:''})
             console.log(serverData.error)
 
           }else{
-            updateUserContext(serverData.data);
+            
             setData({});
             navigate('/dashboard')
           }
