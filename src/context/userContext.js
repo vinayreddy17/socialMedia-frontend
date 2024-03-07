@@ -44,7 +44,7 @@ export function UserContextProvider({ children }) {
   // };
 
   return (
-    <UserContext.Provider value={{ user, setUser, isLoading, error, updateUserContext }}>
+    <UserContext.Provider value={{ user, setUser, isLoading, error }}>
       {children}
     </UserContext.Provider>
   );
