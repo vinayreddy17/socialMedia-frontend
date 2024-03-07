@@ -27,21 +27,21 @@ export function UserContextProvider({ children }) {
       fetchData();
       setK(false);
     }
-  }, [user]);
+  }, []);
 
   // Function to update the user context
-  const updateUserContext = async (userData) => {
-    try {
-      setIsLoading(true);
-      // Update the user context variable
-      setK(true);
-      setUser(userData);
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  // const updateUserContext = async (userData) => {
+  //   try {
+  //     setIsLoading(true);
+  //     // Update the user context variable
+  //     setK(true);
+  //     setUser(userData);
+  //   } catch (error) {
+  //     setError(error.message);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
 
   return (
     <UserContext.Provider value={{ user, setUser, isLoading, error, updateUserContext }}>
