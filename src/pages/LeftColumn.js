@@ -7,6 +7,7 @@ import axios from 'axios';
 
 function LeftColumn({ onSuccess }) {
   const { user } = useContext(UserContext);
+  console.log('leftcolumn',user);
   const [postData, setPostData] = useState({ title: '', content: '' });
 
   const handleSubmit = async (e) => {
