@@ -25,7 +25,7 @@ const [data, setData] = useState({email:'',password:''})
 
           }else{
            console.log(serverData.data)
-            updateUserContext(serverData.data);
+            // updateUserContext(serverData.data);
             setData({});
             navigate('/dashboard')
           }
