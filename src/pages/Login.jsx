@@ -19,7 +19,7 @@ const [data, setData] = useState({email:'',password:''})
           const serverData=await axios.post('/login',{
             email,password
           });
-          
+             console.log(serverData.data)
           if(serverData.error){
             console.log(serverData.error)
 
