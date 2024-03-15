@@ -7,6 +7,8 @@ import { UserContext } from '../context/userContext';
 
 function Login() {
  const navigate = useNavigate()
+ //new line
+const { user,setUser } = useContext(UserContext);
  const { updateUserContext } = useContext(UserContext);
 const [data, setData] = useState({email:'',password:''})
 
@@ -24,7 +26,8 @@ const [data, setData] = useState({email:'',password:''})
             console.log(serverData.error)
 
           }else{
-           console.log(serverData.data)
+           
+            setUser(serverData.data)
             // updateUserContext(serverData.data);
             setData({});
             navigate('/dashboard')
